@@ -1,0 +1,296 @@
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(leaguespartan-bold.ttf);
+}
+
+body {
+    font-family: "LeagueSpartan", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    text-align: left;
+    color: white;
+    background-color: #ff3d25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-home {
+    float: left;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.header-navigation {
+    float: right;
+    margin-right: 1rem;
+}
+
+ul.nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+li.nav-element {
+    display: inline;
+    padding: 0 1rem 0 1rem;
+    margin: 0;
+}
+
+.intro {
+    background: url(header.marbles.2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/*.intro-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    width: 50%;
+    padding: 1rem 1rem 2rem 1rem;
+    color: rgb(255, 235, 235);
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 50, .5);
+}
+*/
+
+.intro-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    padding: 1rem 1rem 2rem 1rem;
+    color: rgb(255, 235, 235);
+}
+
+.intro-circle-down {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 235, 235);
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 50, .5);
+    transition: all .6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all .6s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.down-arrow {}
+
+.intro-circle-down:hover {
+    transform: scale(1.3);
+}
+
+.intro-bigtext {
+    font-size: calc(1.5vw + 1.5rem);
+}
+
+.intro-normaltext {
+    font-size: calc(1.5vw + 1.5rem);
+}
+
+.intro-name {
+    font-size: calc(3vw + 3rem);
+}
+
+span.myname {
+    color: rgb(252, 247, 247);
+    font-weight: 700;
+}
+
+h2.title {
+    font-size: 4rem;
+}
+
+.portfolio-row {
+    margin: 0 auto 6rem auto;
+    max-width: 1200px;
+}
+
+.portfolio-cell {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+    min-width: 300px;
+}
+
+.jobimage {
+    text-align: center;
+}
+
+.jobsummary-type {
+    color: #a4a4a4;
+    margin-bottom: .4rem;
+}
+
+.jobsummary-title {
+    color: #252525;
+    margin-bottom: .8rem;
+}
+
+.jobsummary-divider {}
+
+.jobsummary-description {
+    font-family: "Libre Baskerville";
+    line-height: 175%;
+    color: #636363;
+    margin-bottom: .8rem;
+}
+
+.jobsummary-skills {
+    color: #252525;
+    margin-bottom: .4rem;
+}
+
+.jobsummary-moreinfolink {}
+
+@media only screen and (min-width: 1001px) {
+    .intro {
+        padding-top: 4rem;
+        padding-left: 4rem;
+    }
+    .intro-text {
+        width: 50%;
+    }
+    .intro-circle-down {
+        margin-top: 5rem;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 7rem;
+    }
+    .down-arrow {
+        margin-top: 1.5rem;
+        height: 4rem;
+    }
+    .portfolio-row {
+        width: 80%;
+    }
+    .jobimage {
+        display: inline-block;
+    }
+    .jobsummary-type {
+        font-size: .8rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .jobsummary-title {
+        font-size: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .jobsummary-description {
+        font-size: 1.4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .jobsummary-skills {
+        font-size: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+    .intro {
+        padding-top: 3rem;
+        padding-left: 3rem;
+    }
+    .intro-text {
+        width: 70%;
+    }
+    .intro-circle-down {
+        margin-top: 4rem;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 6rem;
+    }
+    .down-arrow {
+        margin-top: 1.25rem;
+        height: 3.5rem;
+    }
+    .portfolio-row {
+        width: 90%;
+    }
+    .jobimage {
+        display: inline-block;
+    }
+    .jobsummary-type {
+        font-size: .6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .jobsummary-title {
+        font-size: 1.8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .jobsummary-description {
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .jobsummary-skills {
+        font-size: .8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .intro {
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    .intro-text {
+        width: 85%;
+    }
+    .intro-circle-down {
+        margin-top: 3rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
+    }
+    .down-arrow {
+        margin-top: 1rem;
+        height: 3rem;
+    }
+    .portfolio-row {
+        width: 90%;
+    }
+    .jobsummary {
+        width: 100%;
+    }
+    .jobimage {
+        display: none;
+    }
+    .jobsummary-type {
+        font-size: .8rem;
+    }
+    .jobsummary-title {
+        font-size: 2rem;
+    }
+    .jobsummary-description {
+        font-size: 1.2rem;
+    }
+    .jobsummary-skills {
+        font-size: 1rem;
+    }
+}
