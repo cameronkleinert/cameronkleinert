@@ -2,16 +2,12 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <title>Cameron Kleinert Web Developer Portfolio</title>
     <meta property="og:url" name="url" content="http://www.cameronkleinert.com" />
     <meta property="og:title" name="title" content="Cameron Kleinert Web Developer Portfolio">
     <meta property="og:description" name="description" content="Cameron Kleinert's web development portfolio.">
     <meta property="og:type" name="type" content="website" />
-    <meta property="og:image" name="image" content="" />
-    <meta property="og:image:width" name="og:image:width" content="300" />
-    <meta property="og:image:height" name="og:image:width" content="300" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet">
@@ -53,6 +49,30 @@
 </head>
 
 <body>
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a class="hamburger-link" href="#">My Services</a></li>
+                <li><a class="hamburger-link" href="#">My Work</a></li>
+                <li><a class="hamburger-link" href="#">About Me</a></li>
+                <li><a class="hamburger-link" href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li>My Services</li>
+            <li>My Work</li>
+            <li>About Me</li>
+            <li>Contact Me</li>
+        </ul>
+    </div>
+
     <div class="intro">
         <div class="intro__content">
             <h1>
@@ -110,7 +130,7 @@
                     <h2>My Geocaching Profile.com</h2>
                 </div>
                 <div class="workexperience--jobdivider"></div>
-                <div class="workexperience--jobdescription">I co-created and developed mygeocachingprofile.com in XXXX and sold it to Groundspeak, Inc. (the creators of geocaching) in XXXX. I continue to support and develop the site part-time for Groundspeak.
+                <div class="workexperience--jobdescription">I co-created and developed my geocaching profile.com in XXXX and sold it to Groundspeak, Inc. (the creators of geocaching) in XXXX. I continue to support and develop the site part-time for Groundspeak.
                 </div>
                 <div class="workexperience--jobskills">asp.net, c++, html/css, javascript, iis, ms sql server
                 </div>
@@ -130,7 +150,7 @@
                     <h2>Atlantic Brew Supply Homebrew Recipe Generator</h2>
                 </div>
                 <div class="workexperience--jobdivider"></div>
-                <div class="workexperience--jobdescription">I co-created and developed mygeocachingprofile.com in XXXX and sold it to Groundspeak, Inc. (the creators of geocaching) in XXXX. I continue to support and develop the site part-time for Groundspeak.
+                <div class="workexperience--jobdescription">I co-created and developed my geocaching profile.com in XXXX and sold it to Groundspeak, Inc. (the creators of geocaching) in XXXX. I continue to support and develop the site part-time for Groundspeak.
                 </div>
                 <div class="workexperience--jobskills">asp.net, c++, html/css, javascript, iis, ms sql server
                 </div>
@@ -148,7 +168,7 @@
                     <h2>Atlantic Brew Supply</h2>
                 </div>
                 <div class="workexperience--jobdivider"></div>
-                <div class="workexperience--jobdescription">I co-created and developed mygeocachingprofile.com in XXXX and sold it to Groundspeak, Inc. (the creators of geocaching) in XXXX. I continue to support and develop the site part-time for Groundspeak.
+                <div class="workexperience--jobdescription">I co-created and developed my geocaching profile.com in XXXX and sold it to Groundspeak, Inc. (the creators of geocaching) in XXXX. I continue to support and develop the site part-time for Groundspeak.
                 </div>
                 <div class="workexperience--jobskills">asp.net, c++, html/css, javascript, iis, ms sql server
                 </div>
@@ -166,16 +186,23 @@
                     <h2>NCSU Student Legal Services</h2>
                 </div>
                 <div class="workexperience--jobdivider"></div>
-                <div class="workexperience--jobdescription">I co-created and developed mygeocachingprofile.com in XXXX and sold it to Groundspeak, Inc. (the creators of geocaching) in XXXX. I continue to support and develop the site part-time for Groundspeak.
+                <div class="workexperience--jobdescription">I co-created and developed my geocaching profile.com in XXXX and sold it to Groundspeak, Inc. (the creators of geocaching) in XXXX. I continue to support and develop the site part-time for Groundspeak.
                 </div>
                 <div class="workexperience--jobskills">asp.net, c++, html/css, javascript, iis, ms sql server
                 </div>
                 <div class="workexperience--jobmoreinfolink"></div>
             </div>
         </div>
-        <div class="divider-down"></div>
+        <div class="divider-straight"></div>
+        <div class="aboutme"></div>
     </div>
 
+    <script>
+        document.getElementById('toggle').onclick = function() {
+            document.getElementById('toggle').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('open');
+        };
+    </script>
     <script src="cameronkleinert.js"></script>
     <script src="js/aos.js"></script>
     <script>
