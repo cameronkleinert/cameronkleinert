@@ -95,8 +95,8 @@
     
     .button_container span {
         background: #fff;
-        border: none;
-        height: 5px;
+        border: solid 1px black;
+        height: 7px;
         width: 100%;
         position: absolute;
         top: 0;
@@ -240,6 +240,10 @@
         color: #000 !important;
         transition: color 200ms linear;
     }
+    
+    .navigation_link {
+        cursor: pointer;
+    }
     /* ---------------------------------------------------------------------------------------------------------------------------*/
     /*----------------------------------------------------------------------------------------------------------------------------*/
     
@@ -332,7 +336,7 @@
     
     .services {
         padding-top: 3rem;
-        padding-bottom: 6rem;
+        padding-bottom: 4rem;
         margin: auto;
     }
     
@@ -364,6 +368,13 @@
     /* ----------------------------------------------------------------------------------------------------------------- */
     /* WORK EXPERIENCE ------------------------------------------------------------------------------------------------- */
     
+    .divider {
+        width: 80%;
+        height: 3px;
+        background-color: darkgray;
+        margin: auto;
+    }
+    
     .divider-down {
         background-color: black;
         height: 5px;
@@ -377,18 +388,12 @@
         margin-bottom: 4rem;
     }
     
-    .divider-down--underside {
-        background-color: orange;
-        top: -4rem;
-        left: -1%;
-        height: 7rem;
-        width: 101%;
-        position: relative;
-        -ms-transform: rotate(2deg);
-        /* IE 9 */
-        -webkit-transform: rotate(2deg);
-        /* Safari */
-        transform: rotate(2deg);
+    .divider-straight {
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
     }
     
     .divider-up {
@@ -406,6 +411,10 @@
     
     h2.title {
         font-size: 4rem;
+    }
+    
+    .workexperience {
+        padding-top: 4rem;
     }
     
     .workexperience--card {
@@ -438,12 +447,10 @@
     
     .workexperience--description {
         display: inline-block;
-        width: 60%;
         min-height: 15rem;
         vertical-align: middle;
         border-radius: 3rem;
         margin-bottom: 2rem;
-        padding: 2rem;
     }
     
     .jobimage {
@@ -484,13 +491,132 @@
     }
     
     .aboutme {
-        background-color: orange;
-        top: -7rem;
+        background-color: #3d396b;
+        padding-top: 3rem;
+        margin-top: 5rem;
+    }
+    
+    .aboutme--image {
+        width: 350px;
         position: relative;
+        top: -5rem;
+    }
+    
+    .aboutme--text {
+        position: relative;
+        top: -4rem;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: rgb(255, 235, 235);
+        margin: auto;
+        padding: 0rem, 1rem, 0, 1rem;
+    }
+    
+    .aboutme a {
+        color: #ff5427;
+    }
+    
+    .contactme {
+        background-color: #3d396b;
+        padding-bottom: 3rem;
+    }
+    
+    .contactme a {
+        color: #ff5427;
+    }
+    
+    .contactme--text {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: rgb(255, 235, 235);
+        margin: auto;
+        padding: 0, 1rem, 0, 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contactme--email,
+    .contactme--message {
+        margin: auto;
+        border: 0;
+        outline: 0;
+        padding: 1rem;
+        border-radius: 8px;
+        display: block;
+        width: 40rem;
+        max-width: 80vw;
+        min-width: 250px;
+        /*font-family: Arial, sans-serif;
+        font-size: 1rem;*/
+        box-shadow: 0px 0px 0px 3px #558a3c;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.25rem;
+        line-height: 150%;
+    }
+    
+    .contactme--message {
+        margin-top: 1rem;
+        height: 12rem;
+    }
+    
+    .contactme--email:invalid,
+    .contactme--email:invalid {
+        box-shadow: 0px 0px 0px 3px red !important;
+    }
+    
+    .contactme--button {
+        font-family: "LeagueSpartan", sans-serif;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: rgb(255, 235, 235);
+        background: #ff5427;
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+        padding: 1rem;
+        border-radius: 8px;
+        display: block;
+        width: 40rem;
+        max-width: 80vw;
+        min-width: 250px;
+        margin: 1rem auto 0 auto;
+    }
+    
+    .contactme--button:hover {
+        /*box-shadow: 0 1px 1px 1px #ff5427;*/
+    }
+    
+    .contactme--button--depressed {
+        background: #8A311B !important;
+    }
+    
+    .contactme--feedback {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: rgb(255, 235, 235);
+        padding-top: 1rem;
+    }
+    
+    .connectwithme {
+        background-color: #3d396b;
+        padding-bottom: 3rem;
+    }
+    
+    .footer {
+        font-family: "LeagueSpartan", sans-serif;
+        font-size: 1rem;
+        line-height: 150%;
+        color: rgb(255, 235, 235);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: #23213f;
         height: 5rem;
     }
     /* ------------------------------------------------------------------------------------------------------------*/
-    /* SCREEN IS LARGER THAN 1001 PX -----------------------------------------------------------------------------*/
+    /* SCREEN IS LARGER THAN 1001 PX */
+    /* ------------------------------------------------------------------------------------------------------------*/
     
     @media only screen and (min-width: 1001px) {
         .button_container {
@@ -545,8 +671,23 @@
             padding-left: 3rem;
             padding-right: 3rem;
         }
+        .workexperience--description {
+            width: 60%;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        .aboutme--text {
+            width: 60%;
+        }
+        .contactme--text {
+            width: 60%;
+        }
+        .aboutme--image {
+            width: 350px;
+        }
     }
-    /*screen is larger than 801px but smaller than 1000px*/
+    /* ------------------------------------------------------------------------------------------------------------*/
+    /* SCREEN IS LARGER THAN 801px but smaller than 1000px */
+    /* ------------------------------------------------------------------------------------------------------------*/
     
     @media only screen and (min-width: 801px) and (max-width: 1000px) {
         .button_container {
@@ -598,8 +739,23 @@
             padding-left: 2rem;
             padding-right: 2rem;
         }
+        .workexperience--description {
+            width: 60%;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        .aboutme--text {
+            width: 70%;
+        }
+        .contactme--text {
+            width: 70%;
+        }
+        .aboutme--image {
+            width: 300px;
+        }
     }
-    /*screen is smaller than 800px*/
+    /* ------------------------------------------------------------------------------------------------------------*/
+    /* SCREEN IS SMALLER THAN 801px
+    /* ------------------------------------------------------------------------------------------------------------*/
     
     @media only screen and (max-width: 800px) {
         .button_container {
@@ -645,5 +801,18 @@
         }
         .jobsummary-skills {
             font-size: 1rem;
+        }
+        .workexperience--description {
+            width: 100%;
+            padding: 0rem 2rem 2rem 2rem;
+        }
+        .aboutme--text {
+            width: 80%;
+        }
+        .contactme--text {
+            width: 80%;
+        }
+        .aboutme--image {
+            width: 250px;
         }
     }
