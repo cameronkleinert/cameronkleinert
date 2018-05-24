@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cameron Kleinert Web Developer Portfolio - My Geocaching Profile</title>
+    <meta property="og:url" name="url" content="http://www.cameronkleinert.com/mygeocachingprofile.html" />
+    <meta property="og:title" name="title" content="Cameron Kleinert Web Developer Portfolio - My Geocaching Profile">
+    <meta property="og:description" name="description" content="A description of Cameron Kleinert's work experience with the My Geocaching Profile.com website and long term consultation with Groundspeak company.">
+    <meta property="og:type" name="type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="portfolio.css?v=1.0">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Website",
+            "name": "Cameron Kleinert Web Developer Portfolio - My Geocaching Profile",
+            "description": "A description of Cameron Kleinert's work experience with the My Geocaching Profile.com website and long term consultation with Groundspeak company.",
+            "url": "http://www.cameronkleinert.com/mygeocachingprofile.html",
+            "about": {
+                "@type": "CreativeWork",
+                "name": "Cameron Kleinert Web Developer Portfolio - My Geocaching Profile"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Cameron Kleinert"
+            },
+            "copyrightHolder": {
+                "@type": "Person",
+                "name": "Cameron Kleinert"
+            },
+            "creator": {
+                "@type": "Person",
+                "name": "Cameron Kleinert"
+            },
+            "keywords": "cameron kleinert, web developer, web development, raleigh, north carolina, consultant, freelance, website, creator, designer, developer, mygeocachingprofile, my geocaching profile, mygeocachingprofile.com, mgp, mgp.com, geocaching, geocaching software, geocaching profile generator",
+        }
+    </script>
+</head>
+
+<body>
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a class="hamburger-link" onclick="scrollToIdOverlay('services');">My Services</a></li>
+                <li><a class="hamburger-link" onclick="scrollToIdOverlay('workexperience');">My Work</a></li>
+                <li><a class="hamburger-link" onclick="scrollToIdOverlay('aboutme');">About Me</a></li>
+                <li><a class="hamburger-link" onclick="scrollToIdOverlay('contactme');">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li class="navigation_link" onclick="scrollToId('services');">My Services</li>
+            <li class="navigation_link" onclick="scrollToId('workexperience');">My Work</li>
+            <li class="navigation_link" onclick="scrollToId('aboutme');">About Me</li>
+            <li class="navigation_link" onclick="scrollToId('contactme');">Contact Me</li>
+        </ul>
+    </div>
+
+    <div class="aboutme" style="height:10rem;">
+    </div>
+
+    <div class="">
+        <img src="monitor.png">
+    </div>
+
+    <div class="footer">
+        <script type="text/javascript">
+            document.write("Copyright \u00A9 " + new Date().getFullYear() + " Cameron Kleinert");
+        </script>
+    </div>
+
+    <script>
+        document.getElementById('toggle').onclick = function() {
+            document.getElementById('toggle').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('open');
+        };
+    </script>
+    <script src="cameronkleinert.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

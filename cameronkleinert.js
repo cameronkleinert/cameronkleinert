@@ -81,7 +81,7 @@ function sendEmail() {
                 document.getElementsByClassName('contactme--email')[0].value = "";
                 document.getElementsByClassName('contactme--message')[0].value = "";
 
-                document.getElementsByClassName('contactme--button')[0].removeClass("contactForm_button--depressed");
+                document.getElementsByClassName('contactme--button')[0].classList.remove("contactForm_button--depressed");
             }
         };
 
