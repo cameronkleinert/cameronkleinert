@@ -1,6 +1,6 @@
     @font-face {
         font-family: LeagueSpartan;
-        src: url(leaguespartan-bold.ttf);
+        src: url(../fonts/leaguespartan-bold.ttf);
     }
     
     * {
@@ -332,6 +332,13 @@
         }
     }
     /* --------------------------------------------------------------------------------------------------------------------------- */
+    /* --- HEADER ----------------------------------------------------------------------------------------------------------- */
+    
+    .header {
+        background-color: #3d396b;
+        height: 6rem;
+    }
+    /* --------------------------------------------------------------------------------------------------------------------------- */
     /* --- SERVICES ----------------------------------------------------------------------------------------------------------- */
     
     .services {
@@ -373,40 +380,6 @@
         height: 3px;
         background-color: darkgray;
         margin: auto;
-    }
-    
-    .divider-down {
-        background-color: black;
-        height: 5px;
-        width: 100%;
-        -ms-transform: rotate(2deg);
-        /* IE 9 */
-        -webkit-transform: rotate(2deg);
-        /* Safari */
-        transform: rotate(2deg);
-        margin-top: 3rem;
-        margin-bottom: 4rem;
-    }
-    
-    .divider-straight {
-        background-color: black;
-        height: 5px;
-        width: 100%;
-        margin-top: 3rem;
-        margin-bottom: 4rem;
-    }
-    
-    .divider-up {
-        background-color: black;
-        height: 5px;
-        width: 100%;
-        -ms-transform: rotate(-2deg);
-        /* IE 9 */
-        -webkit-transform: rotate(-2deg);
-        /* Safari */
-        transform: rotate(-2deg);
-        margin-top: 2rem;
-        margin-bottom: 3rem;
     }
     
     h2.title {
@@ -487,7 +460,15 @@
     }
     
     .workexperience--jobmoreinfolink {
-        font-family: "LeagueSpartan", sans-serif;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.25rem;
+        line-height: 150%;
+        color: #636363;
+    }
+    
+    .workexperience--jobmoreinfolink a {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     
     .aboutme {
@@ -627,7 +608,7 @@
             padding: 2rem 3rem 1rem 1rem;
         }
         .intro {
-            background-image: url(hero.2000.jpg);
+            background-image: url(../images/hero.2000.jpg);
             background-repeat: no-repeat;
             /*center center fixed;*/
             background-attachment: scroll;
@@ -698,7 +679,7 @@
             padding: 2rem 3rem 1rem 1rem;
         }
         .intro {
-            background-image: url(hero.1250.jpg);
+            background-image: url(../images/hero.1250.jpg);
             background-repeat: no-repeat;
             /*center center fixed;*/
             background-attachment: scroll;
@@ -766,7 +747,7 @@
             padding: 0;
         }
         .intro {
-            background-image: url(hero.1250.jpg);
+            background-image: url(../images/hero.1250.jpg);
             background-repeat: no-repeat;
             /*center center fixed;*/
             background-attachment: scroll;
