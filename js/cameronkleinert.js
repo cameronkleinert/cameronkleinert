@@ -37,63 +37,26 @@ function sendEmail() {
         //depress button
         //$(".contactme--button").addClass("contactme--button--depressed");
         document.getElementsByClassName('contactme--button')[0].classList.add("contactme--button--depressed");
-        /*$.ajax('mail.php', {
+        $.ajax('js/mail.php', {
             async: true,
             type: "post",
             data: {
-                "email": $('.contactme--email').val(),
-                "message": $('.contactme--message').val()
+                "email": document.getElementsByClassName('contactme--email')[0].value,
+                "message": document.getElementsByClassName('contactme--message')[0].value,
             },
             success: function success(data) {
-                $(".contactme--feedback").text("Thanks!");
-                $('.contactme--email').val('');
-                $('.contactme--message').val('');
-            },
-            error: function error() {
-                $(".contactme--feedback").text("Whoops!  Something went wrong.");
-            },
-            complete: function complete() {
-                // undepress button
-                $(".contactme--button").removeClass("contactForm_button--depressed");
-            }
-        });*/
-
-        var data = {
-            "email": document.getElementsByClassName('contactme--email')[0].value,
-            "message": document.getElementsByClassName('contactme--message')[0].value
-        };
-        var request = new XMLHttpRequest();
-        request.open('POST', 'mail.php', true);
-        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        request.onload = function() {
-            if (this.status >= 200 && this.status < 400) {
-                // Success!
                 document.getElementsByClassName('contactme--feedback')[0].innerHTML = "Thanks!";
                 document.getElementsByClassName('contactme--email')[0].value = "";
                 document.getElementsByClassName('contactme--message')[0].value = "";
+            },
+            error: function error() {
+                document.getElementsByClassName('contactme--feedback')[0].innerHTML = "Whoops!  Something went wrong.";
 
-                document.getElementsByClassName('contactme--button')[0].classList.remove("contactForm_button--depressed");
-
-                //var resp = this.response;
-            } else {
-                // We reached our target server, but it returned an error
-                document.getElementsByClassName('contactme--feedback')[0].innerHTML = "error!";
-                document.getElementsByClassName('contactme--email')[0].value = "";
-                document.getElementsByClassName('contactme--message')[0].value = "";
-
-                document.getElementsByClassName('contactme--button')[0].classList.remove("contactForm_button--depressed");
+            },
+            complete: function complete() {
+                // undepress button
+                document.getElementsByClassName('contactme--button')[0].classList.remove("contactme--button--depressed");
             }
-        };
-
-        request.onerror = function() {
-            // There was a connection error of some sort
-            document.getElementsByClassName('contactme--feedback')[0].innerHTML = "error!";
-            document.getElementsByClassName('contactme--email')[0].value = "";
-            document.getElementsByClassName('contactme--message')[0].value = "";
-
-            document.getElementsByClassName('contactme--button')[0].classList.remove("contactForm_button--depressed");
-
-        };
-        request.send(data);
+        });
     }
 }
