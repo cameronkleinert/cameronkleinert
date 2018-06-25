@@ -37,6 +37,7 @@ function sendEmail() {
         //depress button
         //$(".contactme--button").addClass("contactme--button--depressed");
         document.getElementsByClassName('contactme--button')[0].classList.add("contactme--button--depressed");
+
         $.ajax('js/mail.php', {
             async: true,
             type: "post",
@@ -49,8 +50,8 @@ function sendEmail() {
                 document.getElementsByClassName('contactme--email')[0].value = "";
                 document.getElementsByClassName('contactme--message')[0].value = "";
             },
-            error: function error() {
-                document.getElementsByClassName('contactme--feedback')[0].innerHTML = "Whoops!  Something went wrong.";
+            error: function error(a, b, c) {
+                document.getElementsByClassName('contactme--feedback')[0].innerHTML = "Whoops!  Something went wrong." + b.toString() + "; " + c.toString();
 
             },
             complete: function complete() {

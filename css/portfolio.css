@@ -1,6 +1,6 @@
     @font-face {
         font-family: LeagueSpartan;
-        src: url(../fonts/leaguespartan-bold.ttf);
+        src: url('../fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguespartan-bold.ttf') format('truetype');
     }
     
     * {
@@ -243,8 +243,17 @@
     
     .navigation_link {
         cursor: pointer;
+        font-size: 1.75rem;
     }
+    
+    .navigation_link a {}
     /* ---------------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+    
+    .singlepage {
+        background-color: #3d396b;
+        padding-top: 3rem;
+    }
     /*----------------------------------------------------------------------------------------------------------------------------*/
     
     .intro {
@@ -252,19 +261,37 @@
         background-position: center top;
         background-origin: border-box;
         width: 100%;
-        min-height: 100vh;
+        padding-bottom: 1rem;
+        /*min-height: 100vh;*/
     }
     
     .intro__content {
         font-family: "LeagueSpartan", sans-serif;
         font-weight: 700;
         text-align: left;
-        padding: 1rem 1.75rem 2rem 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         color: rgb(255, 235, 235);
     }
     
     .intro__normalText {
         font-size: calc(1.5vw + 1.25rem);
+        margin-bottom: 3rem;
+    }
+    
+    .intro__contactbutton {
+        font-size: calc(.6vw + .9rem);
+        padding: 1.25rem 1rem 1rem 1rem;
+        border: solid 1px white;
+        border-radius: 1rem;
+        display: inline-block;
+        transition: all .25s;
+    }
+    
+    .intro__contactbutton:hover {
+        background-color: rgba(5, 5, 5, .5);
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all .25s;
     }
     
     .intro__nameText {
@@ -331,6 +358,60 @@
             opacity: 1;
         }
     }
+    /*
+    a.fa {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .arrow {
+        text-align: center;
+        margin: 2% auto;
+    }
+    
+    .bounce {
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+    
+    @-webkit-keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+    
+    @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+    */
     /* --------------------------------------------------------------------------------------------------------------------------- */
     /* --- HEADER ----------------------------------------------------------------------------------------------------------- */
     
@@ -507,13 +588,21 @@
         color: #ff5427;
     }
     
+    .contactme_title {
+        font-family: "LeagueSpartan", sans-serif;
+        color: rgb(255, 235, 235);
+        margin: auto;
+        padding: 0 1rem 0 1rem;
+        margin-bottom: 1rem;
+    }
+    
     .contactme--text {
         font-family: 'Libre Baskerville', serif;
         font-size: 1.25rem;
         line-height: 150%;
         color: rgb(255, 235, 235);
         margin: auto;
-        padding: 0, 1rem, 0, 1rem;
+        padding: 0 1rem 0 1rem;
         margin-bottom: 2rem;
     }
     
@@ -596,6 +685,54 @@
         height: 5rem;
     }
     /* ------------------------------------------------------------------------------------------------------------*/
+    /* CASE STUDY
+    /* ------------------------------------------------------------------------------------------------------------*/
+    
+    .casestudy_wrapper {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        margin: auto;
+        width: 60%;
+    }
+    
+    .casestudy_title {
+        margin-bottom: 3rem;
+    }
+    
+    .casestudy_monitor {
+        margin-bottom: 3rem;
+    }
+    
+    .casestudy_monitorimage {
+        width: 600px;
+        max-width: 80vw;
+    }
+    
+    .casestudy_intro {
+        margin-bottom: 2rem;
+    }
+    
+    .casestudy_divider {
+        margin-bottom: 2rem;
+    }
+    
+    .casestudy_sectiontitle {
+        margin-bottom: 2rem;
+    }
+    
+    .casestudy_section {
+        margin-bottom: 2rem;
+    }
+    /* ------------------------------------------------------------------------------------------------------------*/
+    /* SCREEN IS SMALLER THAN 1400 PX */
+    /* ------------------------------------------------------------------------------------------------------------*/
+    
+    @media only screen and (max-width: 1300px) {
+        .navigation_link {
+            font-size: 1rem;
+        }
+    }
+    /* ------------------------------------------------------------------------------------------------------------*/
     /* SCREEN IS LARGER THAN 1001 PX */
     /* ------------------------------------------------------------------------------------------------------------*/
     
@@ -657,6 +794,9 @@
             padding: 2rem 2rem 2rem 2rem;
         }
         .aboutme--text {
+            width: 60%;
+        }
+        .casestudy_wrapper {
             width: 60%;
         }
         .contactme--text {
@@ -727,6 +867,9 @@
         .aboutme--text {
             width: 70%;
         }
+        .casestudy_wrapper {
+            width: 70%;
+        }
         .contactme--text {
             width: 70%;
         }
@@ -758,7 +901,7 @@
             padding-left: 2rem;
         }
         .intro__content {
-            width: 80%;
+            width: 90%;
         }
         .services {
             /*padding-left: .25rem;*/
@@ -788,6 +931,9 @@
             padding: 0rem 2rem 2rem 2rem;
         }
         .aboutme--text {
+            width: 80%;
+        }
+        .casestudy_wrapper {
             width: 80%;
         }
         .contactme--text {

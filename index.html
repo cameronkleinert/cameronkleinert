@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 
     <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/portfolio.css?v=1.0">
+    <link rel="stylesheet" href="css/portfolio.css">
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -79,20 +79,19 @@
                 <div class="intro__normalText">Hi, I'm</div>
                 <div class="intro__nameText">Cameron Kleinert.</div>
             </h1>
-            <div class="intro__normalText">I'm a freelance web developer in Raleigh, North Carolina. I build websites, interactive web applications, and other digital doodads.</div>
+            <div class="intro__normalText">I'm a freelance web developer in Raleigh, North Carolina. I build websites, interactive web applications, and other digital doodads.
+            </div>
+            <a onclick="scrollToId('contactme');">
+                <div class="intro__contactbutton">I want to work with you! Send me a message!</div>
+            </a>
         </div>
+        <!--<div class="arrow bounce">
+            <a class="fa fa-arrow-down fa-2x" href="#"></a>
+        </div>-->
     </div>
 
     <div id="services" class="services">
-        <div class="services__element" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
-            <div class="services__marble"><img class="marble" src="images/marble17.100.png"></img>
-            </div>
-            <div class="services__title">
-                <h2>Personal Dedicated<br>Support</h2>
-            </div>
-            <div class="services__text">I make things easy for my clients. I'm accessible, proactive, easy to work with, and I'll do whatever it takes to get the project right.
-            </div>
-        </div>
+
         <div class="services__element" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
             <div class="services__marble"><img class="marble" src="images/marble26.100.png"></img>
             </div>
@@ -109,6 +108,7 @@
             </div>
             <div class="services__text">I build web applications. If you need an online tool, a form, or anything more complicated than a plain static webpage, I'd love to hear your ideas.</div>
         </div>
+
         <div class="services__element" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
             <div class="services__marble"><img class="marble" src="images/marble15.100.png"></img>
             </div>
@@ -116,6 +116,15 @@
                 <h2>Design for<br>All Devices</h2>
             </div>
             <div class="services__text">Your site has to work on desktops and phones, Chrome and IE, WiFi and 3G, and everything in between. I keep all this in mind right from the beginning of a project.</div>
+        </div>
+        <div class="services__element" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
+            <div class="services__marble"><img class="marble" src="images/marble17.100.png"></img>
+            </div>
+            <div class="services__title">
+                <h2>Personal Dedicated<br>Support</h2>
+            </div>
+            <div class="services__text">I make things easy for my clients. I'm accessible, proactive, easy to work with, and I'll do whatever it takes to get the project right.
+            </div>
         </div>
     </div>
     <div class="divider"></div>
@@ -239,8 +248,9 @@
         </div>
     </div>
     <div id="contactme" class="contactme">
+        <h2 class="contactme_title">Do you want to chat about a project?</h2>
         <div class="contactme--text">
-            Do you want to chat about a project? Contact me with the form below or email me directly at <a href="mailto:cameron.kleinert@gmail.com">cameron.kleinert@gmail.com</a>. I'm looking forward to hearing your ideas!
+            Contact me with the form below or email me directly at <a href="mailto:cameron.kleinert@gmail.com">cameron.kleinert@gmail.com</a>. I'm looking forward to hearing your ideas!
         </div>
         <input type="email" minlength="3" class="contactme--email" placeholder="Your Email" required>
         <textarea class="contactme--message" name="contactForm_message" placeholder="Your Message" required></textarea>
