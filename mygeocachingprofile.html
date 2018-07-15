@@ -43,46 +43,162 @@
                 "@type": "Person",
                 "name": "Cameron Kleinert"
             },
-            "keywords": "cameron kleinert, web developer, web development, raleigh, north carolina, consultant, freelance, website, creator, designer, developer, mygeocachingprofile, my geocaching profile, mygeocachingprofile.com, mgp, mgp.com, geocaching, geocaching software, geocaching profile generator",
+            "keywords": "cameron kleinert, web developer, web development, raleigh, north carolina, consultant, freelance, website, creator, designer, developer, mygeocachingprofile, my geocaching profile, mygeocachingprofile.com, mgp, mgp.com, geocaching, geocaching software, geocaching profile generator"
         }
     </script>
 </head>
 
 <body>
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li>
+                    <a class="hamburger-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hamburger-link" href="index.html#services">My Services</a>
+                </li>
+                <li>
+                    <a class="hamburger-link" href="index.html#workexperience">My Work</a>
+                </li>
+                <li>
+                    <a class="hamburger-link" href="index.html#aboutme">About Me</a>
+                </li>
+                <li>
+                    <a class="hamburger-link" href="index.html#contactme">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <div class="header">
         <div class="navigation">
             <ul>
-                <li class="navigation_link"><a href="index.html">Home</a></li>
-                <li class="navigation_link"><a href="index.html#services">My Services</a></li>
-                <li class="navigation_link"><a href="index.html#workexperience">My Work</a></li>
-                <li class="navigation_link"><a href="index.html#aboutme">About Me</a></li>
-                <li class="navigation_link"><a href="index.html#contactme">Contact Me</a></li>
-                <!--<li class="navigation_link" onclick="scrollToId('home');">Home</li>
-                <li class="navigation_link" onclick="scrollToId('services');">My Services</li>
-                <li class="navigation_link" onclick="scrollToId('workexperience');">My Work</li>
-                <li class="navigation_link" onclick="scrollToId('aboutme');">About Me</li>
-                <li class="navigation_link" onclick="scrollToId('contactme');">Contact Me</li>-->
+                <li class="navigation_link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="navigation_link">
+                    <a href="index.html#services">My Services</a>
+                </li>
+                <li class="navigation_link">
+                    <a href="index.html#workexperience">My Work</a>
+                </li>
+                <li class="navigation_link">
+                    <a href="index.html#aboutme">About Me</a>
+                </li>
+                <li class="navigation_link">
+                    <a href="index.html#contactme">Contact Me</a>
+                </li>
             </ul>
         </div>
     </div>
 
     <div class="casestudy_wrapper">
-        <h1 class="casestudy_title">What I Worked With and Learned Making Mygeocachingprofile.com</h1>
+        <h1 class="casestudy_title">What I Learned Making
+            <br>My Geocaching Profile.com</h1>
         <div class="casestudy_monitor">
             <img class="casestudy_monitorimage" src="images/monitor.mgp.600.jpg">
         </div>
-        <div class="casestudy_intro">fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg
-            hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg
+        <div class="casestudy_intro">In 2007, I co-created, designed, and developed mygeocachingprofile.com from scratch. The site is a tool used by geocaching
+            hobbists to generate an attractive set of images detailing their geocaching adventures and feats. For example,
+            the site produces statistics about how many geocaches the user has found, graphs detailing when the finds were
+            made, maps showing where the finds were made, award badges for completing community challenges, and much more.
+            The site was a success and eventually we decided to sell it to Groundspeak, Inc. Groundspeak is the company that
+            runs the entire geocaching game. They integrated some of my code into their main geocaching.com site and then
+            decided to also keep the original mygeocachingprofile.com site live and hired me to maintain it, develop new
+            content, and support its user base. I continue in that role today.
+        </div>
+        <div class="casestudy_divider">
+            <img src="images/marble14.100.png">
+        </div>
+        <h2 class="casestudy_sectiontitle">I Learned How to Handle a Full Stack Development Project</h2>
+        <div class="casestudy_section">
+            Creating mygeocachingprofile.com meant developing across the full development stack. I originally worked with a 3rd party
+            hosting platform to serve the site and later teamed with the development team at Groundspeak to migrate everything
+            to their internal servers. I configured IIS to host the site and control file access and security permissions.
+            I created a MS SQL Server database to store user data and wrote SQL to query the data. The site uses ASP.NET
+            coded in C# for the bulk of its server side logic and the front-end is written in HTML, CSS, and Javascript.
+            My strongest skills lie in front end development, but producing a site from scratch and working across the full
+            stack has been invaluable for understanding how websites work.
+            <img class="casestudy_fullstack" src="images/fullstack.gears.png"></img>
+        </div>
+        <div class="casestudy_divider">
+            <img src="images/marble15.100.png">
+        </div>
+        <h2 class="casestudy_sectiontitle">I Learned How to Handle Complex XML Parsing</h2>
+        <div class="casestudy_section">All Geocachers have access to a personal XML file from the geocaching.com site that contains information about the
+            geocaches they've found. Mygeocachingprofile.com allows users to upload that file and then kicks off a process
+            where the XML file is read and analyzed. The XML data is used to generate statistics, charts, maps, badges, and
+            more. Designing and programming this process taught me how to properly crawl through XML files. That knowledge
+            has been useful in working with the more popular modern-day JSON format used by APIs.
+            <img class="casestudy_image_cacheattributes" src="images/cache.attributes.example.png"></img>
+            <div class="imagecaption">An example of data pulled from an XML file and turned into an image</div>
         </div>
         <div class="casestudy_divider">
             <img src="images/marble17.100.png">
         </div>
-        <h2 class="casestudy_sectiontitle">Section 1</h2>
-        <div class="casestudy_section">fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg
-            hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg fdsdh sdgh gfh f ghdf ghdhg gd hdg hgd hgdh fgd hfg</div>
+        <h2 class="casestudy_sectiontitle">I Learned How to Create, Design, and Maintain a MS SQL Database</h2>
+        <div class="casestudy_section">
+            Mygeocachingprofile.com has tens of thousands of users each with their own authentication credentials, preferences, and geocaching
+            data. All of this information is held and secured in a MS SQL database. Designing, building, and using this relational
+            database has given me experience with the MS SQL application, writing SQL queries, securing frontend inputs from
+            database attacks, and developing code that more efficiently handles database connections.
+            <img class="casestudy_image_cacherranking" src="images/cacher.ranking.example.png"></img>
+            <div class="imagecaption">The site also ranks cachers on various statistics. All this info is stored in the backend database.</div>
+        </div>
+        <div class="casestudy_divider">
+            <img src="images/marble24.100.png">
+        </div>
+        <h2 class="casestudy_sectiontitle">I Learned How to Code Several Data Visualization Tools</h2>
+        <div class="casestudy_section">Each geocacher has a huge amount of data associated with their caching activity. Geocaching data includes the types
+            of geocaches found, the dates those caches were originally placed and found, latitude/longitude of the cache
+            locations, ratings of the find difficulty and terrain difficulty, and much more. Geocachers want to see this
+            data analyzed and presented in a logical and attractive way. I've programmed several visualization tools to present
+            this data and the project has provided me a deeper understanding of the art and science of data visualization.
+            I've worked with charts, graphs, lists, maps, statistical analysis, dynamic color shading, and have tackled the
+            challenge of creating tools that are scalable for any geocaching data set.
+            <img class="casestudy_image_dataviz" src="images/dataviz.example.1.jpg"></img>
+            <div class="imagecaption">An example of statistics regarding a cacher's activity</div>
+            <img class="casestudy_image_dataviz" src="images/dataviz.example.2.jpg"></img>
+            <div class="imagecaption">An example of a line graph showing a cacher's activity over time</div>
+            <img class="casestudy_image_dataviz" src="images/dataviz.example.3.jpg"></img>
+            <div class="imagecaption">An example of a bar graph showing the distance of caches from the cacher's home</div>
+        </div>
+        <div class="casestudy_divider">
+            <img src="images/marble26.100.png">
+        </div>
+        <h2 class="casestudy_sectiontitle">I Learned How to Use Shapefiles to Analyze and Present Geospatial Data</h2>
+        <div class="casestudy_section">Shapefiles are a mapping format developed to hold geographic information along with associated shape vectors. They
+            can be queried for information. For example, one can find out which country shape contains a certain latitude/longitude.
+            Their data can also be extracted into a programmatic object, styled, and drawn to an image. These characteristics
+            made them perfect for locating geocaching finds on various maps and then drawing maps for users to enjoy.
+            <br>
+            <br> After working on mygeocachingprofile.com for years, I’m now well versed in the shapefile format, GIS tools for
+            reading shapefiles, the Sharpmap .NET helper library, and complex geometric calculations to find where shapes
+            intersect. I also have gone down many geographic rabbit holes including the several historical county divisions
+            in England, the true nationalities of very small Caribbean islands, and disagreements over the county line demarcations
+            in Texas!
+            <img class="casestudy_image_shapefile" src="images/shapefile.example.1.jpg"></img>
+            <div class="imagecaption">An example of an image created from a US county shapefile</div>
+            <img class="casestudy_image_shapefile" src="images/shapefile.example.2.jpg"></img>
+            <div class="imagecaption">An example of an image created from a UK county shapefile</div>
+        </div>
+        <div class="casestudy_divider">
+            <img src="images/marble14.100.png">
+        </div>
+        <h2 class="casestudy_sectiontitle">I Learned How to Support and Engage a 30,000+ User Base</h2>
+        <div class="casestudy_section">As mygeocachingprofile.com has grown, I've had to build a support infrastructure for my users. I built a Help and
+            FAQ page, a contact form for submitting questions and suggestions, and a blog and facebook page for announcing
+            updates. Each week, I engage directly with my users by answering questions and considering suggestions for the
+            site. I've learned how to identify common questions and then redesign parts of the site to decrease confusion
+            and thereby decrease support emails. Direct engagement with the community has been invaluable for understanding
+            how geocachers use the site and what type of features they want to see in the future.
+        </div>
     </div>
-
-
     <div class="footer">
         <script type="text/javascript">
             document.write("Copyright \u00A9 " + new Date().getFullYear() + " Cameron Kleinert");
@@ -90,12 +206,12 @@
     </div>
 
     <script>
-        document.getElementById('toggle').onclick = function() {
+        document.getElementById('toggle').onclick = function () {
             document.getElementById('toggle').classList.toggle('active');
             document.getElementById('overlay').classList.toggle('open');
         };
     </script>
-    <script src="cameronkleinert.js"></script>
+    <script src="js/cameronkleinert.js"></script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init();
