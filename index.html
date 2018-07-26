@@ -2,20 +2,45 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122928183-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122928183-1');
+    </script>
+
     <meta charset="utf-8">
     <title>Cameron Kleinert Web Developer Portfolio</title>
+
     <meta property="og:url" name="url" content="https://www.cameronkleinert.com" />
-    <meta property="og:title" name="title" content="Cameron Kleinert Web Developer Portfolio">
-    <meta property="og:description" name="description" content="Cameron Kleinert's web development portfolio.">
+    <meta property="og:title" name="title" content="Cameron Kleinert's Web Developer Portfolio">
+    <meta property="og:description" name="description" content="Cameron Kleinert is a freelance web developer in Raleigh, North Carolina who builds websites, interactive web applications, and other digital doodads.">
     <meta property="og:type" name="type" content="website" />
+    <meta property="og:image" content="https://www.cameronkleinert.com/images/ck.fb.png">
+    <meta property="twitter:image" content="https://www.cameronkleinert.com/images/ck.twitter.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://plus.google.com/u/0/117590383860712855118" rel="publisher" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
 
+    <script>
+        window.addEventListener('load', function () {
+            var allimages = document.getElementsByTagName('img');
+            for (var i = 0; i < allimages.length; i++) {
+                if (allimages[i].getAttribute('data-src')) {
+                    allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+                }
+            }
+        }, false)
+    </script>
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -103,7 +128,7 @@
 
         <div class="services__element" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
             <div class="services__marble">
-                <img class="marble" src="images/marble26.100.png"></img>
+                <img class="marble" data-src="images/marble26.100.png" alt="marble"></img>
             </div>
             <div class="services__title">
                 <h2>Website Design and
@@ -114,7 +139,7 @@
         </div>
         <div class="services__element" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
             <div class="services__marble">
-                <img class="marble" src="images/marble14.100.png"></img>
+                <img class="marble" data-src="images/marble14.100.png" alt="marble"></img>
             </div>
             <div class="services__title">
                 <h2>Custom Interactive
@@ -126,9 +151,9 @@
 
         <div class="services__element" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
             <div class="services__marble">
-                <img class="marble" src="images/marble15.100.png"></img>
+                <img class="marble" data-src="images/marble15.100.png" alt="marble"></img>
             </div>
-            <div class="services__title">
+            <div class=" services__title">
                 <h2>Design for
                     <br>All Devices</h2>
             </div>
@@ -137,7 +162,7 @@
         </div>
         <div class="services__element" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
             <div class="services__marble">
-                <img class="marble" src="images/marble17.100.png"></img>
+                <img class="marble" data-src="images/marble17.100.png" alt="marble"></img>
             </div>
             <div class="services__title">
                 <h2>Personal Dedicated
@@ -152,7 +177,8 @@
     <div id="workexperience" class="workexperience">
         <div class="workexperience--card">
             <div class="workexperience--imageContainer" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
-                <img class="workexperience--gearimage" src="images/gear.375.mgp.png">
+                <img class="workexperience--gearimage" data-src="images/gear.375.mgp.png" alt="My Geocaching Profile.com
+                    Work Experience">
             </div>
             <div class="workexperience--description">
                 <div class="workexperience--jobtype">CO-CREATOR / DEVELOPER</div>
@@ -168,13 +194,14 @@
                 <div class="workexperience--jobskills">asp.net, c++, html/css, javascript, iis, ms sql server
                 </div>
                 <div class="workexperience--jobmoreinfolink">
-                    <a href="mygeocachingprofile.html">what i learned on this project</a>
+                    <a href="mygeocachingprofile.html">see screenshots and details</a>
                 </div>
             </div>
         </div>
         <div class="workexperience--card">
             <div class="workexperience--imageContainer" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
-                <img class="workexperience--gearimage" src="images/gear.375.recipebuilder.png">
+                <img class="workexperience--gearimage" data-src="images/gear.375.recipebuilder.png" alt="Atlantic Brew
+                    Supply Recipe Builder Work Experience">
             </div>
             <div class="workexperience--description">
                 <div class="workexperience--jobtype">DESIGNER / DEVELOPER / CONSULTANT</div>
@@ -197,7 +224,8 @@
         </div>
         <div class="workexperience--card">
             <div class="workexperience--imageContainer" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
-                <img class="workexperience--gearimage" src="images/gear.375.abs.png">
+                <img class="workexperience--gearimage" data-src="images/gear.375.abs.png" alt="Atlantic Brew Supply Work
+                    Experience">
             </div>
             <div class="workexperience--description">
                 <div class="workexperience--jobtype">WEB DEVELOPMENT CONSULTANT</div>
@@ -220,7 +248,8 @@
         </div>
         <div class="workexperience--card">
             <div class="workexperience--imageContainer" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
-                <img class="workexperience--gearimage" src="images/gear.375.craftbeer.png">
+                <img class="workexperience--gearimage" data-src="images/gear.375.craftbeer.png" alt="Craft Beer Name
+                    Generator Work Experience">
             </div>
             <div class="workexperience--description">
                 <div class="workexperience--jobtype">CREATOR / DESIGNER / DEVELOPER</div>
@@ -242,7 +271,8 @@
         </div>
         <div class="workexperience--card">
             <div class="workexperience--imageContainer" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
-                <img class="workexperience--gearimage" src="images/gear.375.studentlegal.png">
+                <img class="workexperience--gearimage" data-src="images/gear.375.studentlegal.png" alt="NCSU Student
+                    Legal Work Experience">
             </div>
             <div class="workexperience--description">
                 <div class="workexperience--jobtype">WEB DEVELOPMENT CONSULTANT</div>
@@ -266,7 +296,7 @@
                 More about my work experience on
                 <br>
                 <a href="http://www.linkedin.com/in/cameron-kleinert" target="_blank" rel="noopener noreferrer">
-                    <img src="images/linkedin.png"></img>
+                    <img data-src="images/linkedin.png" alt="LinkedIn"></img>
                 </a>
             </div>
 
@@ -275,7 +305,7 @@
     </div>
     <div id="aboutme" class="aboutme">
         <div data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-out-back">
-            <img class="aboutme--image" src="images/ck.v5.500.png" alt="...">
+            <img class="aboutme--image" data-src="images/ck.v5.500.png" alt="Cameron Kleinert">
         </div>
         <div class="aboutme--text">
             A little about me - I'm a Raleigh, North Carolina-based freelance web developer and a proud dad of two girls, one dog, one
@@ -292,8 +322,8 @@
             Contact me with the form below or email me directly at
             <a href="mailto:cameron.kleinert@gmail.com">cameron.kleinert@gmail.com</a>. I'm looking forward to hearing your ideas!
         </div>
-        <input type="email" minlength="3" class="contactme--email" placeholder="Your Email" required>
-        <textarea class="contactme--message" name="contactForm_message" placeholder="Your Message" required></textarea>
+        <input type="email" minlength="3" class="contactme--email" placeholder="Your Email" required aria-label="Your Email">
+        <textarea class="contactme--message" name="contactForm_message" placeholder="Your Message" required aria-label="Your Message"></textarea>
         <button class="contactme--button" value="Send Message" onclick="sendEmail();">Send Message</button>
         <p class="contactme--feedback">
             <br>
